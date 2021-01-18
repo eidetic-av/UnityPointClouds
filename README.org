@@ -1,0 +1,20 @@
+#+TITLE: Point Cloud Type and Tools for Unity
+* Description
+This package provides a ~PointCloud~ type for use in C♯ scrips and inside VFX Graphs.
+* Usage
+Import this package using Unity's package manager with this git repository.
+** VFX Graph
+This package provides a VFX Property binder to use PointClouds inside VFX Graphs
+by linking the backing Texture2Ds that hold position data and colour data. To
+easily use this data inside a graph, the ~PointCloudTexturesSampler~ node is
+provided, which takes the backing textures and outputs X,Y,Z and R,G,B data.
+** Scripts
+To use the ~PointCloud~ type inside a script, import ~Eidetic.PointClouds~ and
+instantiate a PointCloud like so:
+#+begin_src csharp
+PointCloud myPointCloud = PointCloud.Instantiate();
+#+end_src
+There are multiple ways to set XYZ and RGB data. Have a look inside ~PointCloud.cs~.
+* Ply Importer
+There is an importer for PLY files included, based off of an importer by keijiro.
+Any PLY asset in your project will be imported as a ~PointCloud~.

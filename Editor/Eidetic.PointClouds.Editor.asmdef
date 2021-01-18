@@ -1,0 +1,17 @@
+{
+    "name": "Eidetic.PointClouds.Editor",
+    "rootNamespace": "",
+    "references": [
+        "Unity.VisualEffectGraph.Runtime",
+        "Eidetic.PointClouds.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

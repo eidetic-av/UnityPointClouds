@@ -1,0 +1,21 @@
+{
+  "name": "com.eidetic.pointclouds",
+  "displayName": "PointClouds",
+  "version": "0.0.1",
+  "unity": "2019.3",
+  "description": "Point cloud types and utilities.",
+  "keywords": [
+    "point",
+    "cloud",
+    "point-cloud",
+    "ply"
+  ],
+  "dependencies": {
+    "com.unity.visualeffectgraph": "7.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eidetic-av/PointClouds"
+  },
+  "type": "library"
+}

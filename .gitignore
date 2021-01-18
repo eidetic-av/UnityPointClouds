@@ -1,0 +1,9 @@
+build/
+CMakeFiles/
+cmake-*/
+.idea/
+.vs/
+
+*~*
+*.swp
+

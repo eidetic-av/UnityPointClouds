@@ -5,7 +5,9 @@
         "Unity.VisualEffectGraph.Runtime",
         "Eidetic.PointClouds.Runtime"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

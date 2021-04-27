@@ -7,7 +7,7 @@ using UnityEngine.VFX.Utility;
 namespace Eidetic.PointClouds
 {
     [AddComponentMenu("VFX/Property Binders/URack/PointCloud Binder")]
-    [VFXBinder("URack/PointCloud Binder")]
+    [VFXBinder("Eidetic/PointCloud Binder")]
     public class PointCloudBinder : VFXBinderBase
     {
         [VFXPropertyBinding("UnityEngine.Texture2D"), FormerlySerializedAs("Positions")]

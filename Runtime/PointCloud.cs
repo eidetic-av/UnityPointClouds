@@ -70,7 +70,11 @@ namespace Eidetic.PointClouds
                 copySrc = rt;
 
                 RenderTexture.active = currentRt;
+                #if UNITY_EDITOR
+                DestroyImmediate(src);
+                #else
                 Destroy(src);
+                #endif
                 src = null;
             }
 
@@ -78,7 +82,11 @@ namespace Eidetic.PointClouds
 
             if (destroySrc)
             {
+                #if UNITY_EDITOR
+                DestroyImmediate(copySrc);
+                #else
                 Destroy(copySrc);
+                #endif
                 copySrc = null;
             }
         }
@@ -143,9 +151,13 @@ namespace Eidetic.PointClouds
 
             SetPositionMap(positionsRt);
             SetColorMap(colorsRt);
-
+ #if UNITY_EDITOR
+            DestroyImmediate(positionsRt);
+            DestroyImmediate(colorsRt);
+                #else
             Destroy(positionsRt);
             Destroy(colorsRt);
+                #endif
             positionsBuffer.Release();
             colorsBuffer.Release();
 
